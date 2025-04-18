@@ -1,0 +1,51 @@
+# Security-sensitive files (certs, keys, CSR)
+*.key
+*.csr
+*.crt
+*.pem
+*.pfx
+*.jks
+*.json
+*.p12
+
+# Logs
+*.log
+
+# Temp files & backups
+*.tmp
+*.bak
+*.old
+*.swp
+*.swo
+*~
+*.retry
+
+# Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.code-workspace
+
+# Shell history (just in case)
+.bash_history
+.zsh_history
+
+# Package or output folders (if used later)
+node_modules/
+dist/
+build/
+out/
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# System files or metadata
+*.pid
+*.sock
+*.lock
