@@ -1,0 +1,10 @@
+[Unit]
+Description=Run cosmos-fw.service every 60 seconds to refresh rules
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=60s
+Unit=cosmos-fw.service
+
+[Install]
+WantedBy=timers.target
