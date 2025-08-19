@@ -1,0 +1,17 @@
+[Unit]
+Description=Cosmos Validator Firewall
+Documentation=https://github.com/votre-repo/readme.md
+After=network-online.target docker.service tailscale.service
+Wants=network-online.target docker.service tailscale.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+# Un petit délai pour laisser Docker initialiser ses propres chaînes iptables
+ExecStartPre=/bin/sleep 5
+ExecStart=/usr/local/bin/cosmos-fw.sh apply
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
