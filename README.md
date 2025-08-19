@@ -4,7 +4,6 @@ A collection of utility scripts for system administration, automation, network o
 
 ## 🔧 Scripts Included
 
-- `renew_csr.sh`: Automatically generate a new CSR (Certificate Signing Request) based on the existing SSL certificate from a given URL, preserving SANs, algorithm and key parameters.
 - `cosmos-fw.sh`: Dynamically configures iptables for Cosmos validators running on Docker, separating P2P (public) and admin (Tailscale) traffic. Comes with systemd units for automation.
 
 > More scripts will be added over time...
